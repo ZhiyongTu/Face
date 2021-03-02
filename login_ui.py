@@ -32,11 +32,6 @@ class Ui_login(object):
         self.exit.setFont(font)
         self.exit.setObjectName("exit")
 
-        # 加logo
-        self.logo = QtWidgets.QLabel(self.centralwidget)
-        self.logo.setGeometry(QtCore.QRect(800, 20, 451, 81))
-        self.logo.setObjectName("logo")
-
         self.face = QtWidgets.QPushButton(self.centralwidget)
         self.face.setGeometry(QtCore.QRect(790, 550, 100, 30))
         font = QtGui.QFont()
@@ -179,7 +174,6 @@ class Ui_login(object):
         self.close_3.raise_()
         self.max_.raise_()
         self.min_.raise_()
-        self.logo.raise_()
 
         login.setCentralWidget(self.centralwidget)
         self.retranslateUi(login)
@@ -192,8 +186,6 @@ class Ui_login(object):
         self.exit.setText(_translate("login", "退出"))
         self.face.setText(_translate("login", "人脸登录"))
         self.label.setText(_translate("login", "人脸识别系统登录"))
-        pixmap = QtGui.QPixmap("./img/logo.png")
-        self.logo.setPixmap(pixmap)
         self.label_2.setText(_translate("login", "账号："))
         self.label_3.setText(_translate("login", "密码："))
         self.label_4.setText(_translate("login", "注册账号"))

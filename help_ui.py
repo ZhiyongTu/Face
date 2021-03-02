@@ -48,11 +48,6 @@ class Ui_help_hh(object):
         self.min_.setFont(font)
         self.min_.setObjectName("min_")
 
-        # 加logo
-        self.logo = QtWidgets.QLabel(self.centralwidget)
-        self.logo.setGeometry(QtCore.QRect(800, 20, 451, 81))
-        self.logo.setObjectName("logo")
-
         self.bgcolor = QtWidgets.QLabel(self.centralwidget)
         self.bgcolor.setGeometry(QtCore.QRect(0, 0, 1150, 850))
         self.bgcolor.setText("")
@@ -70,8 +65,6 @@ class Ui_help_hh(object):
         self.max_.raise_()
         self.min_.raise_()
 
-        self.logo.raise_()
-
         help_hh.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(help_hh)
@@ -80,8 +73,6 @@ class Ui_help_hh(object):
     def retranslateUi(self, help_hh):
         _translate = QtCore.QCoreApplication.translate
         help_hh.setWindowTitle(_translate("help_hh", "帮助"))
-        pixmap = QtGui.QPixmap("./img/logo.png")
-        self.logo.setPixmap(pixmap)
         self.help.setText(_translate("help_hh", "人脸识别界面\n\n"
                                                 "1.打开文件：请先打开用户文件夹：user_info\n"
                                                 "2.确定姓名：生成对应学号的人脸存储文件夹\n"

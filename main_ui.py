@@ -177,11 +177,6 @@ class Ui_MainWindow(object):
         self.bgcolor.setText("")
         self.bgcolor.setObjectName("bgcolor")
 
-        # 加logo
-        self.logo = QtWidgets.QLabel(self.centralwidget)
-        self.logo.setGeometry(QtCore.QRect(800, 20, 451, 81))
-        self.logo.setObjectName("logo")
-
         self.countdown = QtWidgets.QLabel(self.centralwidget)
         self.countdown.setGeometry(QtCore.QRect(480, 120, 370, 60))
         font = QtGui.QFont()
@@ -194,7 +189,6 @@ class Ui_MainWindow(object):
         self.countdown.setObjectName("countdown")
 
         self.bgcolor.raise_()
-        self.logo.raise_()
         self.boder.raise_()
         self.open.raise_()
         self.close_.raise_()
@@ -221,8 +215,6 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
 
         MainWindow.setWindowTitle(_translate("MainWindow", "人脸识别系统"))
-        pixmap = QtGui.QPixmap("./img/logo.png")
-        self.logo.setPixmap(pixmap)
         self.open.setText(_translate("MainWindow", "开始采集"))
         self.close_.setText(_translate("MainWindow", "结束采集"))
         self.dete.setText(_translate("MainWindow", "确定姓名"))
